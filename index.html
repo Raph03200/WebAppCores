@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebApp Cores/Voz</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="cabecalho">
+        <h1>Teste de cores com botões (futuramente API de WebSpeech)</h1>
+        <div class="container">
+            <form>
+                <input id="palavra" class="form-control" type="text" placeholder="Digite uma palavra"><br>
+
+                <input type="radio" id="Preto" name="Cores" value="Preto" checked>
+                <label for="Preto">Preto</label><br>
+
+                <input type="radio" id="Vermelho" name="Cores" value="Vermelho">
+                <label for="Vermelho">Vermelho</label><br>
+
+                <input type="radio" id="Azul" name="Cores" value="Amarelo">
+                <label for="Amarelo">Amarelo</label><br>
+
+                <input type="radio" id="Azul" name="Cores" value="Azul">
+                <label for="Azul">Azul</label><br>
+
+                <button type="button" onclick="mudarCor(document.getElementById('palavra').value)">Rodar</button>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <p id="resultado" class="container"></p>
+    </div>
+    
+</body>
+</html>
